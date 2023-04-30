@@ -48,7 +48,16 @@ main div{
     padding: 10px ;
 }
 
-a {
+nav a {
+    text-decoration: none;
+    color:white;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+#receta {
     text-decoration: none;
     color:white;
     padding: 5px;
@@ -69,4 +78,15 @@ footer p {
     color: white;
     text-align: center;
     margin: auto 10px;
+}
+
+iframe {
+    width: 20%;
+    height: 20%;
+}
+
+.iconos{
+    color: #fcfcfc;
+    text-align: center;
+    padding: 1%;
 }
