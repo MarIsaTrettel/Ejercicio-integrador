@@ -21,17 +21,36 @@
         </nav>
         <h1>La cocina de Juan</h1>  
     </header>
-    <form action="tabla.exe" method="get">
-        Nombre: <input type="text"> <br> <br>
-        Apellido: <input type="text"><br> <br>
-        Dirección: <input type="text"><br> <br>
-        Ciudad: <input type="text"><br> <br>
-        Código postal: <input type="number"><br> <br>
-        Fecha de nacimiento: <input type="date"> <br> <br>
-        Género: <input type="radio"> Hombre <input type="radio"> Mujer <input type="radio"> Otro
-    </form>
-
-
+    <menu>
+        <form action="show_data.html" target="_blank" method="get">
+            <label for="firstname">Nombre: </label>
+            <input type="text" name="firstname" placeholder="Escriba aqui"> <br> <br>
+            <input type="submit" value="Enviar"><br>
+            <label for="lastname">Apellido: </label>
+            <input type="text" name="lastname" placeholder="Escriba aqui"><br><br>
+            <label for="adress">Dirección: </label>
+            <input type="text" name="adress" placeholder="Escriba aqui"><br><br>
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city" placeholder="Escriba aqui"><br><br>
+            <label for="zipcode">Código postal: </label>
+            <input type="text" name="zipcode" placeholder="Escriba aqui"><br><br>
+            <label for="birthdate">Fecha de nacimiento: </label>
+            <input type="date" name="birthdate" placeholder="dd/mm/aaaa"><br><br>
+            <p>Género: </p>
+                <input type="radio" name="gender" value="Hombre" checked> Hombre 
+                <input type="radio" name="gender" value="Mujer" > Mujer 
+                <input type="radio" name="gender" value="Otro" > Otro            
+            <p>Estudios:</p>
+                <input type="checkbox" name="estudios" value="primarios">Primarios
+                <input type="checkbox" name="estudios" value="Secundarios">Secundarios
+                <input type="checkbox" name="estudios" value="Terciarios">Terciarios
+                <input type="checkbox" name="estudios" value="Universitarios">Universitarios
+                <input type="checkbox" name="estudios" value="Otros">Otros 
+                <br>|
+            <input type="submit" value="Enviar"><br>
+        </form>
+        <p>Si Ud. hace click en el boton enviar, la información será enviada a la página show_data.html</p>
+    </menu>
     <footer>
         <div class="iconos">
             <a href="#"><i class="fa-brands fa-square-twitter" style="color: #fcfcfc;"></i></a>
